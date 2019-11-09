@@ -9,11 +9,9 @@ Encrypt or decrypt file and choose location and name of the file too,
 
 - [Installation](#installation)
 - [Usage](#usage)
-  * [Reload your Tinker session](#reload-your-tinker-session)
-  * [Magic models](#magic-models)
-  * [Naming strategy](#naming-strategy)
-  * [Names](#names)
-  * [Fast factories](#fast-factories)
+- [Concerns](#concerns)
+- [DevelopmentStrategy](#Development strategy)
+- [Configuration](#configuration)
 - [Configuration](#configuration)
 - [Contributing](#contributing)
 - [License](#license)
@@ -60,7 +58,24 @@ to Decrypt file:
 same for decrypt
 ```
 
-### Development strategy
+## Concerns
+
+```
+> Could not use the same file for all buttons, 
+As for security reasons html do not give input:file the ability 
+to save old file
+
+> Never gave the user the ability to choose the folder outside a specefic folder,
+in our example will be StorageFolder, 
+- so he can choose folder but not that path
+- why? : because he choose file name it index.php, and then choose that path
+in root server to override my index.php, 
+WHICH MEANS IAM ACTING AS FTP DOWNLOADER,
+he will have full control on the server files.
+
+```
+
+## Development strategy
 
 - By using one form, and three buttons,
 - One Controller, One Action Method,
