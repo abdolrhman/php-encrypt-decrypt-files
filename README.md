@@ -38,6 +38,7 @@ From the command line, instead of running `php artisan serve`, run:
 
 ```
 php artisan serve
+URL: localhost:8000/fileUpload
 ```
 
 ### Choose A File to Upload
