@@ -81,10 +81,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel <br>
                 </div>
 
                 <div class="links">
+                    <a style="font-size: 43px" class="btn btn-dark" href={{url('fileUpload')}}>Task Link</a><br><br>
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
